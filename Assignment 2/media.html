@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My World</h1>
+    <p>A multimedia journey about me</p>
+    <nav>
+      <a href="#picture">Picture</a>
+      <br>
+      <a href="#image">Image</a>
+      <br>
+      <a href="#video">Video</a>
+      <br>
+      <a href="#audio">Audio</a>
+      <br>
+     </nav>
+  </header>
+
+  <section id="picture">
+    <h2>Who Am I?</h2>
+    <p>Hi there! I'm a passionate individual driven by technology and creativity. Explore my story through images, videos, and sound.</p>
+
+    <!-- Picture element for responsive images -->
+    <h3>Visual Story</h3>
+    <picture>
+      <source srcset="./images and videos/typing image.PNG" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="./images and videos/typing image.PNG" media="(min-width: 768px)">
+      <source srcset="./images and videos/typing image.PNG" media="(max-width: 767px)">
+      <img src="./images and videos/typing image.PNG" alt="A picture of me working" class="responsive-picture">
+    </picture>
+    <p>This image adjusts based on the device you are using: laptop, tablet, or mobile.</p>
+
+    <!-- Video element -->
+    <h3>My Journey in Action</h3>
+    <div id="video">
+      <video controls poster="images/video-poster.jpg">
+        <source src="videos/my-journey.mp4" type="video/mp4">
+        <source src="videos/my-journey.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      <p>A short video about my journey in technology.</p>
+    </div>
+
+    <!-- Audio element -->
+    <h3>Message from Me</h3>
+    <div id="audio">
+      <audio controls>
+        <source src="audio/message.mp3" type="audio/mpeg">
+        <source src="audio/message.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <p>Listen to a message about my vision and aspirations.</p>
+
+    </div>
+    <div id="image">
+      <img src="./images and videos/laptop.PNG" alt="">
+
+    </div>
+ 
+  </section>
+
+  <footer>
+    <p>Thank you for visiting! Let's connect and create something amazing together.</p>
+  </footer>
+</body>
+</html>
